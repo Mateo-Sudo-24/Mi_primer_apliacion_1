@@ -9,7 +9,6 @@ public class Main {
         double n;
         double x;
         double y;
-        double z;
         String nombre;
 
         System.out.println("Ingrese el numero m: "); //sout salto de linea e impresion
@@ -31,18 +30,16 @@ public class Main {
         System.out.println("#############");
         System.out.println("Ingrese un numero: ");
         y = scanner.nextDouble();
-        System.out.println("Ingrese un numero iterable para el numero: ");
-        z = scanner.nextDouble();
-        for (double i = z ; i <= y; i ++) {
+        for (double i = 2 ; i <= y; i ++) {
             int cont = 0;
             for (int j = 1; j <= i; j++){
                 if (i % j == 0){
                     cont++;
                 }
             }
-
+            if (cont == i){
+                System.out.println(i);
+            }
         }
-
-
     }
 }
