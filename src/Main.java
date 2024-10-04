@@ -33,8 +33,14 @@ public class Main {
         y = scanner.nextDouble();
         System.out.println("Ingrese un numero iterable para el numero: ");
         z = scanner.nextDouble();
-        for (double i = z ; i <= y; i += z) {
-            System.out.println(i);
+        for (double i = z ; i <= y; i ++) {
+            int cont = 0;
+            for (int j = 1; j <= i; j++){
+                if (i % j == 0){
+                    cont++;
+                }
+            }
+
         }
 
 
