@@ -43,5 +43,6 @@ public class Main {
         }
         System.out.println("###############");
         System.out.println("Hola Mundo");
+        System.out.println("Ejemplo de permisos");
     }
 }
